@@ -1,5 +1,6 @@
-let NumeriComputer = []
 let ContenitoreNumero = document.getElementById("Numeri")
+let NumeriComputer = []
+let NumeriUtente = []
 
 
 arrayRng()
@@ -19,4 +20,12 @@ function arrayRng () {
 
 setTimeout(function(){
     ContenitoreNumero.classList.add("d-none")
+    while (NumeriUtente.length <= 5){
+        let UserInput = prompt("scegli i tuoi numeri")
+        NumeriUtente.push(UserInput)
+    }
+
+    console.log(NumeriUtente)
+    return NumeriUtente
+
 }, 3000);
