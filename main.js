@@ -13,29 +13,31 @@ setTimeout(function(){
         NumeriUtente.push(parseInt(UserInput))
     }
     console.log(NumeriUtente)
-    
-    // if(NumeriComputer.toString === NumeriUtente.toString) {
-    //     alert("hai vinto")
-    // } else {
-    //     alert("hai perso")
-    // }
-    const compareArrays = (a, b) =>
-        a.length === b.length &&
-        a.every((element, index) => element === b[index]);
-      
-      console.log(compareArrays(NumeriComputer, NumeriUtente));
 
+    for (let i = 0; i < NumeriComputer.length; i++) {
+        if(!NumeriUtente.includes(NumeriComputer[i])){
+            console.log("non sono uguali")
+            alert("non sono uguali")
+            break
+        } else {
+            console.log("sono uguali")
+            alert("sono uguali")
+            break
+        }
+    }
+    
+    // compare(NumeriComputer, NumeriUtente)
     
 }, 3000);
 
-  
-
-
-
-
-
-
-
+// function compare (array1, array2) {
+//     for (let i = 0; i <= array1.length; i++) {
+//         if(!array2.includes(array1[i])){
+//             console.log("non sono uguali")
+//         }
+//         console.log("sono uguali")
+//     }
+// }
 
 
 function arrayRng () {
