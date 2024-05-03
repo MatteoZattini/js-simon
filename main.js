@@ -18,5 +18,5 @@ function arrayRng () {
 }
 
 setTimeout(function(){
-    
+    ContenitoreNumero.classList.add("d-none")
 }, 3000);
